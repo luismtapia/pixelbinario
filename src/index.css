@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Bakbak+One&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Bungee+Tint&family=Gugi&family=LXGW+WenKai+Mono+TC&family=Megrim&family=Orbitron:wght@400..900&family=Saira+Stencil+One&family=ZCOOL+KuaiLe&family=ZCOOL+QingKe+HuangYou&family=ZCOOL+XiaoWei&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* TODO COLORES */
+  --color-golden: #c5a059;
+  --color-dorado: #d4af37;
+  --color-raisin: #fffefd;
+  --color-taupe: #64748b;
+  --color-texto: #18181b;
+  --color-blanco: #18181b;
+  --color-background: #d6bf8c;
+  --color-shadow: rgba(0, 0, 0, 0.08);
+  
+
+  --color-photoshop: #3b82f6; /* Blue-500 */
+  --color-colores: #ec4899;   /* Pink-500 o bg-cyan-400 */
+  --color-fonts: #10b981;     /* Emerald-500 */
+  --color-web: #a855f7;       /* Purple-500 */
+  --color-imagenes: #f97316;  /* Orange-500 */
+  --color-tutoriales: #145b04;
+
+
+  /* TODO FUENTES */
+  --font-anta: "Anta", sans-serif;
+  --font-gugi: "Gugi", serif;
+  --font-zcool-kuai: "ZCOOL KuaiLe", sans-serif;
+  --font-zcool-qing: "ZCOOL QingKe HuangYou", sans-serif;
+  --font-zcool-xiao: "ZCOOL XiaoWei", serif;
+}
+
+.dark {
+  --color-golden: #f2cc0f;
+  --color-raisin: #212121;
+  --color-taupe: #bfb4b0;
+   --color-texto: #d1d5db;
+  --color-blanco: #d1d5db;
+  --color-dorado: #d4af37;
+  --color-shadow: rgba(0, 0, 0, 0.5);
+  --color-background: #473e2b;
+  --color-prueba: #d6bf8c;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-raisin);
+}
+
+.bg-grainy {
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  filter: contrast(150%) brightness(100%);
+}
+
+/* --- ESTILOS DE SCROLLBAR PERSONALIZADO --- */
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--color-raisin); }
+::-webkit-scrollbar-thumb { background: rgba(212, 175, 55, 0.27); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dorado);
+}
+
+
+
+
+
+/* ::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.27);
+  border-radius: 10px;
+  border: 2px solid #1a1a1a;
+} */
+
+
+
+/* Estándar para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(212, 175, 55, 0.27) var(--color-raisin);
+}
+
+
